@@ -1,0 +1,67 @@
+
+
+
+
+<div class="content">
+    <h1 class="heading">Add Recipe</h1>
+<section class="inner-page">
+    <div class="row justify-content-center">
+        <div class="col-xl-10">
+            <form method="POST" action="/add" class="form">
+
+
+                <div class="form-group row"><label for="name">Recipe name</label>
+                    <input class="form-control"
+                                   id="name" name="name"
+                                   required type="text"
+                                   value="">
+                <div class="form-group row"><label for="image_url">Image URL</label>
+                    <input class="form-control"
+                           id="image_url"
+                           name="image_url"
+                           required type="text"
+                           value=""></div>
+                <div class="form-group row"><label for="description">Description</label>
+                        <input class="form-control"
+                               id="description"
+                               name="description"
+                               required type="text"
+                               value=""></div>
+                <div class="form-group row"><label for="ingredients">Ingredients</label>
+                    <input class="form-control"
+                           id="ingredients"
+                           name="ingredients"
+                           required type="text"
+                           value=""></div>
+               <div class="form-group row"><label for="quantity">Quantity</label>
+                    <input type="number"
+                           id="quantity"
+                           name="quantity"
+                           min="0.5"
+                           value=""></div>
+                <div class=form-group-row"> <label for="unit">Unit</label>
+                    <select id="unit" name="unit">
+                        <option value="g">g</option>
+                        <option value="kg">kg</option>
+                        <option value="ml">ml</option>
+                        <option value="l">l</option>
+                        <option value="l">l</option>
+                        <option value="op">op</option>
+                    </select></div>
+
+                    <br><br>
+                <div class="form-group row"><input class="btn btn-primary"
+                                                   id="submit"
+                                                   name="submit"
+                                                   type="submit"
+                                                   value="Add Recipe"></div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+</div>
+
+
+
